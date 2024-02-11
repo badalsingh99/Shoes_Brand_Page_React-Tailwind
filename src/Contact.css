@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #010712;
+    --secondary-color: #818386;
+    --bg-color: #FCFDFD;
+    --button-color: #5f5d5d;
+    --h1-color: #17181a;
+  }
+  
+ 
+
+  .contact-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #bbdef1;
+  }
+  
+  .left-col {
+    width: 45vw;
+    height: 100%;
+    background-image: url("https://source.unsplash.com/1600x1200?background-nature-ice");
+    background-size: cover;
+    /* filter: blur(1px); */
+    background-repeat: no-repeat;
+  }
+  
+  .logo-c {
+    width: 10rem;
+    padding: 1.5rem;
+  }
+  
+  .right-col {
+    background: #ebf1f7;
+    width: 60vw;
+    height: 100vh;
+    padding: 5rem 3.5rem;
+  }
+  
+  .h1, label, .button-c, .description {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+  
+  .h1 {
+    color: rgb(139, 207, 252);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+  }
+  
+  .p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+    width: 40vw;
+    margin: 0.25rem 0;
+  }
+  
+  label, .description {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 0.650rem;
+    margin-bottom: 3px;
+  }
+  
+  form {
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  .email-label{
+    padding-bottom: 5px ;
+  }
+  
+  input, textarea, label {
+    width: 40vw;
+    display: block;
+    
+  }
+  
+  .p, placeholder, input, textarea {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: var(--primary-color);
+  }
+  
+  input, textarea {
+    color: var(--primary-color);
+    font-weight: 500;
+    background: #ebf1f7;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .button-c {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(15, 15, 15);
+    width: 10rem;
+    margin-top: 20px;
+    height: 2.25rem;
+    border: none;
+    border: 0.1rem solid rgb(124, 120, 120);
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input:hover, textarea:hover, .button-c:hover {
+    color: #000000;
+    background: #accbfa;
+  }
+  
+  .button-c:active {
+    opacity: 0.8;
+  }
+  
+
+
+  #error, #success-msg {
+    width: 40vw;
+    margin: 0.125rem 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-family: 'Jost';
+    color: var(--secondary-color);
+    }
+  
+  
+    #success-msg {
+    transition-delay: 3s;
+    }
+  
+  @media only screen and (max-width: 760px) {
+    .logo-c {
+      width: 8rem;
+    }
+    .h1 {
+      font-size: 1.50rem;
+    }
+    .p {
+      font-size: 0.7rem;
+    }
+    input, textarea, button {
+      font-size: 0.65rem;
+    }
+    .description {
+      font-size: 0.3rem;
+      margin-left: 0.4rem;
+    }
+    .button-c {
+      width: 7rem;
+    }
+  }
